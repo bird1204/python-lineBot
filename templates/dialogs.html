@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>I come from template!!</title>
+        <style>
+            body {
+               background-color: lightyellow;
+            }
+            em {
+                color: LightSeaGreen;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+        {% for dialog in dialogs %}
+            <tr>
+                {% if dialog.source == 'system' %}
+                    <td>{{ dialog.user_name}}</td>
+                    <td>
+                        {{ dialog.content}}<br>
+                        <em>{{ dialog.created_at }}</em>
+                    </td>
+                    <td></td>
+                    <td></td>
+                {% else %}
+                    <td></td>
+                    <td></td>
+                    <td>{{ dialog.user_name}}</td>
+                    <td>
+                        {{ dialog.content}}<br>
+                        <em>{{ dialog.created_at }}</em>
+                    </td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>
