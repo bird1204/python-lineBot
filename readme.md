@@ -1,0 +1,8 @@
+原本想要接skyscaner的api
+作為一個查詢機票價錢的功能型機器人
+但是還在等skyscaner審核
+
+也是個人首個python開源專案
+日後計畫往python移動
+
+原本擅長的RoR 亦不放棄
